@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="kalendarstyles.css">
+    <title>Kalendář</title>
+    
+</head>
+<body>
+ <div class="calendar">
+        <header>
+            <h1>Kalendář</h1>
+        </header>
+        <section class="dates">
+
+            <div class="date" id="elf-date"></div>
+            <div class="date" id="hobbit-date"></div>
+            <div class="date" id="dwarvish-date"></div>
+            <div class="date" id="rohirric-date"></div>
+            <div class="date" id="valinorean-date"></div>
+            <div class="date" id="orkish-date"></div>
+        </section>
+        <section class="controls">
+            <button onclick="increaseDay()">Zvýšit den</button>
+            <button onclick="deleteLocalStorage()">Smazat uložená data</button>
+        </section>
+    </div>
+
+    <script src="kalendarscripts.js"></script>
+</body>
+</html>

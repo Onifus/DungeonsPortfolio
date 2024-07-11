@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hráči a Hodnoty</title>
+    <link rel="stylesheet" href="repstyle.css">
+</head>
+<body>
+
+    <div class="top-bar">
+	
+        <h1>Hráči a Hodnoty</h1>
+		 <div class="navigation-links">
+			<a href="stranka.html">Home</a>
+            <a href="#friendship-section">Přátelství</a>
+			
+        </div>
+	  <div class="search-container">
+		<input type="text" id="searchInput" placeholder="Vyhledat frakci..." onkeypress="handleKeyPress(event)">
+		<button onclick="searchFrakce()">Hledat</button>
+	</div>
+       
+    </div>
+	<h2>Reputace</h2>
+    <div class="players-container">
+        <div class="player" id="player1">
+            <img src="https://via.placeholder.com/50" alt="Player 1">
+            <h3 id="playerName0">Hráč 1</h3>
+            <div class="bars" id="bars1">
+                <!-- Bars will be inserted here -->
+            </div>
+        </div>
+
+        <div class="player" id="player2">
+            <img src="https://via.placeholder.com/50" alt="Player 2">
+            <h3 id="playerName1">Hráč 1</h3>
+            <div class="bars" id="bars2">
+                <!-- Bars will be inserted here -->
+            </div>
+        </div>
+
+        <div class="player" id="player3">
+            <img src="https://via.placeholder.com/50" alt="Player 3">
+            <h3 id="playerName2">Hráč 1</h3>
+            <div class="bars" id="bars3">
+                <!-- Bars will be inserted here -->
+            </div>
+        </div>
+
+        <div class="player" id="player4">
+            <img src="https://via.placeholder.com/50" alt="Player 4">
+            <h3 id="playerName3">Hráč 1</h3>
+            <div class="bars" id="bars4">
+                <!-- Bars will be inserted here -->
+            </div>
+        </div>
+
+        <div class="player" id="player5">
+            <img src="https://via.placeholder.com/50" alt="Player 5">
+            <h3 id="playerName4">Hráč 1</h3>
+            <div class="bars" id="bars5">
+                <!-- Bars will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Úprava pro střední umístění vstupů a tlačítka -->
+    <div class="input-container">
+        <label for="frakce">Vyber frakci:</label>
+        <select id="frakce">
+            <!-- Options will be inserted here -->
+        </select>
+        <input type="number" id="globalValue" placeholder="Zadej hodnotu">
+        <button onclick="addAllPlayers()">Přidat všem hráčům</button>
+        <button onclick="RemAllPlayers()">Odebrat všem hráčům</button>
+    </div>
+
+    <div id="friendship-section" class="friendship-section">
+        <h2>Přátelství</h2>
+        <div class="players-container" id="friendship-players-container">
+            <!-- Obsah hráčů pro přátelství bude generován pomocí JavaScriptu -->
+        </div>
+    </div>
+    <!-- Úprava pro střední umístění vstupů a tlačítka -->
+    <div class="input-container">
+        <label for="friends">Vyber frakci:</label>
+        <select id="friends">
+            <!-- Options will be inserted here -->
+        </select>
+        <input type="number" id="globalffValue" placeholder="Zadej hodnotu">
+        <button onclick="addffAllPlayers()">Přidat všem hráčům</button>
+        <button onclick="RemffAllPlayers()">Odebrat všem hráčům</button>
+    </div>
+    <script src="repscript.js"></script>
+</body>
+</html>

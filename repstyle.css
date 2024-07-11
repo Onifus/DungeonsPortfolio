@@ -1,0 +1,141 @@
+/* Základní styly pro celou stránku */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styly pro horní lištu */
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Styly pro kontejner hráčů */
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styly pro jednotlivé hráče */
+.player {
+    width: calc(20% - 20px); /* 20% šířky kontejneru s odstupem mezi hráči */
+    max-width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Styly pro pruhy (bary) */
+.bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bar-container {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bar {
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.bar .bar-inner {
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    transition: width 0.3s;
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.increase-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* Styly pro vstupní kontejner */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.navigation-links {
+	margin-top:20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navigation-links a {
+    color: White; /* Modrá barva pro odkazy */
+    text-decoration: none;
+	
+    margin: 0 10px;
+    transition: color 0.3s;
+}

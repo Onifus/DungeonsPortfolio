@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Board</title>
+    <link rel="stylesheet" href="queststyle.css">
+</head>
+<body>
+    <div class="quest-board">
+        <h1>Quest Board</h1>
+        <div class="quest-papers" id="questPapersContainer">
+            <!-- Quest papers will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <div class="add-quest-container" id="addQuestContainer" style="display: none;">
+        <h2>Add New Quest</h2>
+        <input type="text" id="questTitle" placeholder="Quest Title">
+        <textarea id="questDescription" placeholder="Quest Description"></textarea>
+        <input type="text" id="questReward" placeholder="Quest Reward">
+        <button onclick="addQuest()">Add Quest</button>
+    </div>
+
+    <div class="login-container" id="loginContainer">
+        <h2>Admin Login</h2>
+        <input type="password" id="adminPassword" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="questscripts.js"></script>
+</body>
+</html>
